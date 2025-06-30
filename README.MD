@@ -1,4 +1,4 @@
-# SignBart: A New Approach for Isolated Sign Language Recognition
+# [SignBart: A New Approach for Isolated Sign Language Recognition](https://arxiv.org/pdf/2506.21592)
 
 **SignBart** introduces a novel method for Isolated Sign Language Recognition (ISLR) using skeleton sequences, focusing on decoupling the x and y coordinates and leveraging a lightweight encoder-decoder architecture based on BART.
 
@@ -167,7 +167,6 @@ Optional flags:
 | SL-GCN       | 98.13%     | 4,872,306   |
 | **SignBart** | **96.04%** | **749,888** |
 
-- Although SPOTER achieved 100% accuracy, SignBart achieves strong accuracy with far fewer parameters, making it more efficient.
 
 ### WLASL Dataset
 
@@ -178,10 +177,6 @@ Optional flags:
 | WLASL-1000 | 81.45%            |
 | WLASL-2000 | 68.00%            |
 
-- **Comparison to NLA-SLR**:
-  - NLA-SLR achieves higher accuracies but uses over 80M to 130M parameters.
-  - SignBart maintains competitive results with significantly fewer parameters (~3-4M).
-
 ### ASL-Citizen Dataset
 
 | Subset           | Accuracy | Parameters |
@@ -191,8 +186,6 @@ Optional flags:
 | ASL-Citizen-400  | 78.96%   | 3,424,144  |
 | ASL-Citizen-1000 | 81.45%   | 3,578,344  |
 | ASL-Citizen-2731 | 75.22%   | 4,548,523  |
-
-- Outperforms baseline models (I3D, ST-GCN) on large-scale ASL-Citizen.
 
 ### Ablation Studies
 
@@ -215,19 +208,3 @@ Optional flags:
 | Only right hand                      | 70.20%   |
 | Both hands                           | 91.35%   |
 | All components (body + left + right) | 96.04%   |
-
-## Contributing
-
-We welcome contributions to SignBart! To contribute:
-
-1. Fork the repository and create a new branch: `feature/<feature-name>` or `fix/<issue-number>`.
-2. Follow PEP8 guidelines for Python code.
-3. Write clear and descriptive commit messages.
-4. Add or update documentation, examples, or tests for new features or bug fixes.
-5. Open a pull request and ensure all tests pass before requesting a review.
-
-For major changes (e.g., new model architectures, major refactoring), please open an issue first to discuss your proposal.
-
-## License
-
-_(To be provided)_
